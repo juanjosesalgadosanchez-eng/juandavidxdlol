@@ -37,6 +37,11 @@ servicios.forEach(function (servicio) {
     });
 });
 
-BotAprend.addEventListener("click", function () {
-    botaprend.classList.toggle("aprend-activo")
-});
+// Menú hamburguesa (celular)
+const hamburguesa = document.querySelector(".hamburguer")
+const enlaces = document.querySelector(".enlaces-header")
+if (hamburguesa && enlaces) {
+    hamburguesa.addEventListener("click", function () {
+        enlaces.classList.toggle("menu-abierto")
+    });
+}
