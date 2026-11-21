@@ -132,7 +132,7 @@ nav {
     margin: 28px 0 0 0;
     width: 130px;
     display: inline-block;
-    background: #1FDE;
+    background: #1FDE82;
     text-align: center;
     color: #fff;
     padding: 12px 0;
@@ -177,7 +177,7 @@ nav {
 .servicio > i {
     font-size: 30px;
     color: #fff;
-    background: #1FDE;
+    background: #1FDE82;
     display: inline-block;
     width: 70px;
     height: 70px;
@@ -237,7 +237,7 @@ nav {
     margin: 28px 0 0 0;
     width: 130px;
     display: inline-block;
-    background: #1FDE;
+    background: #1FDE82;
     text-align: center;
     color: #fff;
     padding: 12px 0;
@@ -418,4 +418,174 @@ box-shadow: 0 8px 32px rgb(132, 29, 179)
 .servicio > i.icono-activo{
     background: #892be0;
     box-shadow: 0 8px 32px rgb(132, 29, 179)
+}
+
+/* ===== RESPONSIVE ===== */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    h1, .titulo {
+        font-size: 38px;
+    }
+
+    .nav {
+        padding: 0 20px;
+    }
+
+    .contenido-header,
+    .pregunta {
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 0;
+        gap: 30px;
+    }
+
+    .contenido-header > img,
+    .pregunta > img {
+        width: 100%;
+        max-width: 450px;
+    }
+
+    .textos-header,
+    .textos-pregunta {
+        margin: 0;
+    }
+
+    .contenedor-servicio {
+        margin: 40px 0;
+    }
+
+    .servicio {
+        width: 48%;
+        padding: 40px 25px;
+    }
+
+    .servicio > h3 {
+        margin: 20px 0;
+    }
+
+    .conten-resultados {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .numbers,
+    .results-text {
+        width: 100%;
+    }
+
+    .results-text {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .serviciosd {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .serviciosd > img {
+        width: 100%;
+        max-width: 450px;
+    }
+
+    .box-skills {
+        margin: 0;
+    }
+
+    .box-skills h4 {
+        width: 100%;
+    }
+
+    .partFooter {
+        width: 45%;
+        margin-bottom: 30px;
+    }
+}
+
+/* Celular */
+@media (max-width: 600px) {
+    h1, .titulo {
+        font-size: 30px;
+    }
+
+    .nav .logo {
+        height: 60px;
+    }
+
+    nav,
+    .nav {
+        height: 70px;
+    }
+
+    header::before {
+        margin-bottom: 70px;
+    }
+
+    /* Menú hamburguesa */
+    .hamburguer {
+        display: block;
+        height: 70px;
+        width: 70px;
+    }
+
+    .hamburguer > i {
+        line-height: 70px;
+    }
+
+    .enlaces-header {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        box-shadow: 0 8px 10px rgba(0, 0, 0, .15);
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .enlaces-header.menu-abierto {
+        display: flex;
+    }
+
+    .nav .enlaces-header a {
+        margin: 0;
+        padding: 15px 0;
+        display: block;
+    }
+
+    .servicio {
+        width: 100%;
+    }
+
+    .numbers .number {
+        width: 100%;
+        padding: 25px 20px;
+    }
+
+    .numbers .number h4 {
+        font-size: 36px;
+    }
+
+    .results-text h4 {
+        font-size: 28px;
+    }
+
+    .partFooter {
+        width: 100%;
+    }
+
+    .partFooter img {
+        width: 50%;
+    }
 }
